@@ -40,3 +40,32 @@ let soma = Number(n1) + Number(n1);
 alert(soma);
 */
 
+// Exercicio 5
+
+/*
+let n1 = Number(prompt("Numero 1: "));
+let n2 = Number(prompt("Numero 2: "));
+let op = prompt("Qual a operação? (+, ...): ");
+
+let r;
+
+if (op === "+"){
+    r = n1 + n2;
+    alert(r);
+} else if(op === "-"){
+    r = n1 - n2;
+    alert(r);
+} else if(op === "*"){
+    r = n1 * n2;
+    alert(r);
+} else if(op === "/"){
+    if (n2 !== 0){
+        r = n1 / n2;
+        alert(r);
+    } else{
+        alert("por 0 não vai")
+    }
+} else{
+    alert("Não é isso!!")
+}
+*/
