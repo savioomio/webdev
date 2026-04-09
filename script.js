@@ -69,3 +69,44 @@ if (op === "+"){
     alert("Não é isso!!")
 }
 */
+
+// Exercicio 6
+
+let n1 = parseFloat(prompt("Numero 1: "));
+let n2 = parseFloat(prompt("Numero 2: "));
+let op = prompt("Qual a operação? (+, ...): ");
+
+if (
+    n1 === null || 
+    n1 !== Number || 
+    n1 !== "" || 
+    isNaN(n1) || 
+    n2 === null || 
+    n2 !== Number || 
+    n2 !== "" ||
+    isNaN(n2)
+)  {
+    alert("Chora")
+}
+
+let r;
+
+if (op === "+"){
+    r = n1 + n2;
+    alert(r);
+} else if(op === "-"){
+    r = n1 - n2;
+    alert(r);
+} else if(op === "*"){
+    r = n1 * n2;
+    alert(r);
+} else if(op === "/"){
+    if (n2 !== 0){
+        r = n1 / n2;
+        alert(r);
+    } else{
+        alert("por 0 não vai")
+    }
+} else{
+    alert("Não é isso!!")
+}
