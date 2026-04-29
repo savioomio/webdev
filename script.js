@@ -72,6 +72,7 @@ if (op === "+"){
 
 // Exercicio 6
 
+/*
 let n1 = parseFloat(prompt("Numero 1: "));
 let n2 = parseFloat(prompt("Numero 2: "));
 let op = prompt("Qual a operação? (+, ...): ");
@@ -109,4 +110,31 @@ if (op === "+"){
     }
 } else{
     alert("Não é isso!!")
+} 
+*/
+
+/*
+function reNumero(n1, n2) {
+    if (n1 > n2) {
+        return `O maior numero é o ${n1}`    
+    } else if(n1 < n2) {
+        return `O maior numero é o ${n2}`
+    }
 }
+
+let numero1 = prompt("numero 1:")
+let numero2 = prompt("numero 2:")
+
+alert(reNumero(numero1, numero2))
+*/
+
+/*
+function parseText(t){
+    let string = t.toUpperCase().trim()
+    alert(string)
+}
+
+let text = "   Chora na tora    "
+
+parseText(text);
+*/
