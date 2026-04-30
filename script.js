@@ -138,3 +138,17 @@ let text = "   Chora na tora    "
 
 parseText(text);
 */
+
+function getRandomInt(n) {
+    const ale = Math.floor(Math.random() * 11) + 1;
+    console.log(ale)
+    if (n === ale ) {
+        return `vc acertou`
+    } else {
+        return "errou"
+    }
+}
+
+let numero = prompt("numero:")
+
+console.log(getRandomInt(numero))
