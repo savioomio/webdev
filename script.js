@@ -139,16 +139,122 @@ let text = "   Chora na tora    "
 parseText(text);
 */
 
-function getRandomInt(n) {
-    const ale = Math.floor(Math.random() * 11) + 1;
-    console.log(ale)
-    if (n === ale ) {
-        return `vc acertou`
-    } else {
-        return "errou"
-    }
-}
+// function getRandomInt(n) {
+//     const ale = Math.floor(Math.random() * 11) + 1;
+//     console.log(ale)
+//     if (n === ale ) {
+//         return `vc acertou`
+//     } else {
+//         return "errou"
+//     }
+// }
 
-let numero = prompt("numero:")
+// let numero = prompt("numero:")
 
-console.log(getRandomInt(numero))
+// console.log(getRandomInt(numero))
+
+// function aumentarNumero(numero){
+//     while (numero < 10) {
+//         console.log(numero);
+//         numero+=2;
+//     }
+// }
+
+// aumentarNumero(2)
+
+
+// function redutorNumero(numero){
+//     while (numero >= 1) {
+//         console.log(numero);
+//         numero--;
+//     }
+// }
+
+// let n = prompt("Digite um numero: ") 
+
+// redutorNumero(n)
+
+// function perguntaNumero (){
+//     const n = Number(prompt("Digite um numero: ") )
+// }
+
+// function redutorNumero(numero){
+//     if (isNaN(numero)){
+//         perguntaNumero()
+//     }else{
+//         numero = perguntaNumero()
+//     }
+
+//     while (numero >= 1) {
+//         console.log(numero);
+//         numero--;
+//     }
+//     confole.log("Contagem finalizada!")
+// }
+
+// const n = Number(prompt("Digite um numero: ") )
+
+// perguntaNumero()
+
+// redutorNumero(n)
+
+
+// let nome;
+// let idade;
+// let salario;
+// let genero;
+// let estadoCivil;
+
+// do {
+//     nome = prompt("Digite seu nome: ")    
+//     if ( nome.length < 3) {
+//         console.log("Digite um nome de verdade")
+//     }
+// } while ( nome.length < 3){
+//     console.log("chora")
+// }
+
+// do {
+//     idade = Number(prompt("Digite sua idade: (entre 0 e 150) "))
+//     if (!idade > 0 && !idade < 150) {
+//         console.log("Digite um idade de verdade")
+//     }
+// } while (!idade > 0 && !idade < 150){
+//     console.log("chora")
+// }
+
+// do {
+//     salario = Number(prompt("Digite seu salario (maior que 0): "))
+//     if (salario < 0) {
+//         console.log("Digite um Salario de verdade")
+//     }
+
+// } while (salario < 0){
+//     console.log("chora")
+// }
+
+// do {
+//     genero = prompt("Digite seu genero: (f, m) ")
+//     if (genero === "f" && genero === "m") {
+//         console.log("Digite um Genero de verdade")
+//     }
+// } while (genero === "f" && genero === "m"){
+//     console.log("chora")
+// }
+
+// do {
+//     estadoCivil = prompt("Digite seu Estado Civil: ('s', 'c', 'v' e 'd')")
+//     if (estadoCivil === "s" && estadoCivil === "c" && estadoCivil === "v" && estadoCivil === "d") {
+//         console.log("Digite um Estado Civil de verdade")
+//     }
+// } while (estadoCivil === "s" && estadoCivil === "c" && estadoCivil === "v" && estadoCivil === "d"){
+//     console.log("chora")
+// }
+
+// const n = Number(prompt("Me da um numero: "))
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(`${n} x ${i} = ${n*i}`)
+// }
+
+
