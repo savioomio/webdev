@@ -210,3 +210,64 @@ do {
 //  do...while → igual ao while, mas executa ao menos 1 vez
 //
 // ============================================================
+
+
+// ─────────────────────────────────────────
+//  10. VALIDAÇÃO DE ENTRADA
+// ─────────────────────────────────────────
+
+// isNaN() — verifica se NÃO é um número válido
+console.log(isNaN("abc"));  // true  → não é número
+console.log(isNaN("42"));   // false → é número
+console.log(isNaN(3.14));   // false → é número
+
+// Verificar campo vazio
+let campo = "";
+if (campo === "" || campo === null || campo === undefined) {
+  console.log("Campo obrigatório!");
+}
+
+// Forma curta (falsy check)
+if (!campo) {
+  console.log("Campo vazio!");
+}
+
+// ── Validar número em intervalo ──────────
+let nota = Number(prompt("Digite a nota (0 a 10):"));
+
+if (isNaN(nota) || nota < 0 || nota > 10) {
+  console.log("Nota inválida!");
+} else {
+  console.log("Nota aceita:", nota);
+}
+
+// ── Repetir até entrada válida (while) ───
+let idade;
+do {
+  idade = Number(prompt("Digite sua idade:"));
+} while (isNaN(idade) || idade < 0 || idade > 120);
+console.log("Idade válida:", idade);
+
+// ── Validar opção de menu ────────────────
+let opcao;
+do {
+  opcao = prompt("Escolha: 1-Novo  2-Abrir  3-Sair");
+} while (opcao !== "1" && opcao !== "2" && opcao !== "3");
+console.log("Opção escolhida:", opcao);
+
+// ── Verificar string não vazia ───────────
+let nome;
+do {
+  nome = prompt("Digite seu nome:");
+  nome = nome ? nome.trim() : "";  // .trim() remove espaços extras
+} while (nome === "");
+console.log("Nome:", nome);
+
+// ── Resumo dos checks mais usados ────────
+//
+//  isNaN(valor)          → true se NÃO for número válido
+//  !valor                → true se vazio, null, undefined, 0 ou ""
+//  valor.trim() === ""   → true se só tiver espaços
+//  valor < min || valor > max  → fora do intervalo permitido
+//
+// ============================================================
